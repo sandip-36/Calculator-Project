@@ -1,0 +1,11 @@
+.cal-conatiner{
+    max-width: 300px;
+    height: 400px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+}
+.display{
+    
+}

@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e9edf3;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    width: 380px;
+    padding: 25px;
+    border-radius: 30px;
+    background: #10141c;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+    margin-top: 40px;
+}
+
+/* Header */
+
+.calculator-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.calculator-header h1 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.calculator-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: #ffad1f;
+    color: #10141c;
+    font-size: 25px;
+}
+
+.history {
+    margin-left: auto;
+    font-size: 28px;
+    color: #b7bdc8;
+    cursor: pointer;
+}
+
+/* Display */
+
+.display {
+    height: 175px;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 25px;
+    background: #191f29;
+    color: #fff;
+    font-size: 26px;
+    text-align: end;
+}
+
+.display:focus {
+    background-color: #191f29;
+}
+
+.calculation {
+    color: #b8bec8;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.result {
+    color: white;
+    font-size: 55px;
+    font-weight: 500;
+}
+
+/* Buttons */
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+button {
+    height: 78px;
+    border: none;
+    border-radius: 50%;
+    background: #282f3b;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: scale(1.04);
+    background: #343c4b;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Special buttons */
+
+.special {
+    background: #3a424f;
+    font-size: 21px;
+}
+
+/* Orange operators */
+
+.operator {
+    background: #ff9f1c;
+    color: white;
+    font-size: 30px;
+}
+
+.operator:hover {
+    background: #ffad35;
+}
+
+/* Zero button */
+
+.zero {
+    grid-column: span 2;
+    border-radius: 40px;
+}
