@@ -26,6 +26,18 @@ const App = () => {
         setCalval("Error");
       }
 
+    }else if(buttontext === "%"){
+      try{
+
+        const expression = calVal
+        .replace(/x/g, "*")
+        .replace(/÷/g, "/");
+
+        const result  =  eval(expression) / 100;
+        setCalval(String(result));
+      }catch{
+        setCalval("error")
+      }
     }else{
       let newdisplayvalue = calVal + buttontext;
       setCalval(newdisplayvalue);
